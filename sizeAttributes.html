@@ -1,0 +1,32 @@
+<html>
+<head><title>srcset example</title></head>
+<body>
+<!--*Working on firefox, not on Chrome*/-->	
+	
+<img src="images/1.jpg"  srcset="images/2.jpg 800w, images/1_2.jpg 1000w" sizes="(max-width:250px) 100vw, 50vw" alt="fish example"/>;	
+
+	
+<!--Reacting to Device Pixel Ration-->
+<img class="dpi" src="images/Den_Haag_2x.jpg" srcset="images/Den_Haag_2x.jpg 2x, images/Den_Haag_1x.jpg 1x" alt="Den Haag Skyline">
+<img class="w" src="images/Australia_1280w.jpg" srcset="images/Australia_1280w.jpg 1280w, images/Australia_640w.jpg 640w" alt=" australia=" from="">
+</body>
+	
+	
+
+</html>
+
+<style>
+
+	@media screen and (max-width:450px){
+		img{
+			width:50vw;
+		}
+	}
+	
+	@media screen and (min-width:460px){
+		img{
+			width:100vw;
+		}
+	}
+
+</style>
